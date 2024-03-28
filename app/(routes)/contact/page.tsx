@@ -14,7 +14,7 @@ const ContactMePage = () => {
         message: ""
     });
 
-    const handleChange = (e) => {
+    const handleChange = (e:any) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
             ...prevState,
@@ -22,7 +22,7 @@ const ContactMePage = () => {
         }));
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e:any) => {
         e.preventDefault();
         const apiUrl = 'https://www.cpesigadvanced.com/WSAPIS/Core/WSEnviaCorreoSIG/Insert';
         const payload = {
